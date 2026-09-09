@@ -1,0 +1,305 @@
+/* ========================================
+   ATELIÊ BELLA
+   Identidade visual
+   ======================================== */
+
+/* ---------- Variáveis ---------- */
+
+:root {
+    --off-white: #FAF7F5;
+    --rose-blush: #E8C7CC;
+    --burgundy: #6D0B0B;
+    --warm-gray: #4D4A4A;
+    --gold: #C9A66B;
+    --deep-rose: #A85C68;
+    --white: #FFFFFF;
+}
+
+
+/* ---------- Reset básico ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--warm-gray);
+    background-color: var(--off-white);
+    line-height: 1.6;
+}
+
+
+/* ---------- Elementos gerais ---------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header {
+    width: 100%;
+    background-color: var(--off-white);
+    border-bottom: 1px solid rgba(77, 74, 74, 0.12);
+}
+
+.header-content {
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    color: var(--burgundy);
+    white-space: nowrap;
+}
+
+
+/* Navegação */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navigation a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--warm-gray);
+
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--burgundy);
+}
+
+
+/* ---------- BOTÕES ---------- */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    background-color: var(--burgundy);
+    color: var(--white);
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    border-radius: 4px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--deep-rose);
+    transform: translateY(-2px);
+}
+
+.button-header {
+    white-space: nowrap;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: calc(100vh - 82px);
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--off-white);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 80px 0;
+}
+
+
+/* Texto do Hero */
+
+.hero-text {
+    max-width: 520px;
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    color: var(--gold);
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: var(--burgundy);
+}
+
+.hero-description {
+    max-width: 450px;
+
+    margin-bottom: 35px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: var(--warm-gray);
+}
+
+
+/* Imagem do Hero */
+
+.hero-image {
+    width: 100%;
+    min-height: 560px;
+
+    background-color: var(--rose-blush);
+
+    border-radius: 180px 180px 20px 20px;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .header-content {
+        gap: 15px;
+    }
+
+    .hero-content {
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-image {
+        min-height: 480px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header-content {
+        flex-wrap: wrap;
+        padding: 18px 0;
+    }
+
+    .navigation {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .button-header {
+        padding: 10px 16px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        padding: 60px 0;
+    }
+
+    .hero-text {
+        max-width: none;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .hero-image {
+        min-height: 420px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    .button-header {
+        font-size: 0.72rem;
+        padding: 9px 12px;
+    }
+
+    .navigation a {
+        font-size: 0.75rem;
+    }
+
+    .hero-content {
+        padding: 45px 0;
+    }
+
+    .hero-image {
+        min-height: 360px;
+    }
+}
