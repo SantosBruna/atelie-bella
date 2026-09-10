@@ -197,9 +197,17 @@ a {
 
 .about-image {
   width: 100%;
-  min-height: 560px;
-  background-color: var(--rose-blush);
+  height: 560px;
+  overflow: hidden;
   border-radius: 20px 180px 20px 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-text {
@@ -333,10 +341,10 @@ a {
     gap: 45px;
   }
 
-  .about-image {
-    min-height: 420px;
-    border-radius: 20px 120px 20px 20px;
-  }
+   .about-image {
+     height: 420px;
+     border-radius: 20px 120px 20px 20px;
+   }
 
   .about-text {
     max-width: none;
