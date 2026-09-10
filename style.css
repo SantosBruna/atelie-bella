@@ -214,6 +214,106 @@ a {
     object-position: center;
 }
 
+/* ---------- SOBRE ---------- */
+
+.about {
+    padding: 110px 0;
+    background-color: var(--white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
+/* Imagem */
+
+.about-image {
+    width: 100%;
+    min-height: 560px;
+
+    background-color: var(--rose-blush);
+
+    border-radius: 20px 180px 20px 20px;
+}
+
+
+/* Texto */
+
+.about-text {
+    max-width: 570px;
+}
+
+.about-text h2 {
+    margin-bottom: 28px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: var(--burgundy);
+}
+
+.about-text p:not(.eyebrow) {
+    margin-bottom: 20px;
+
+    font-size: 0.98rem;
+    line-height: 1.8;
+
+    color: var(--warm-gray);
+}
+
+
+/* Destaques */
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.highlight {
+    text-align: center;
+}
+
+.highlight-icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    background-color: var(--rose-blush);
+
+    border-radius: 50%;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+
+    color: var(--burgundy);
+}
+
+.highlight h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    color: var(--warm-gray);
+}
+
 
 /* ========================================
    RESPONSIVIDADE
@@ -287,6 +387,33 @@ a {
    .hero-image {
        height: 420px;
    }
+
+       .about {
+        padding: 80px 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-image {
+        min-height: 420px;
+        border-radius: 20px 120px 20px 20px;
+    }
+
+    .about-text {
+        max-width: none;
+    }
+
+    .about-text h2 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 
