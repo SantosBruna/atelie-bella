@@ -265,6 +265,104 @@ a {
   color: var(--warm-gray);
 }
 
+/* ---------- SERVIÇOS ---------- */
+
+.services {
+  padding: 110px 0;
+  background-color: var(--off-white);
+}
+
+.services-heading {
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.services-heading h2 {
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--burgundy);
+}
+
+.services-intro {
+  max-width: 600px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--warm-gray);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  position: relative;
+  min-height: 280px;
+  padding: 35px 30px;
+  background-color: var(--white);
+  border: 1px solid rgba(201, 166, 107, 0.25);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(77, 74, 74, 0.08);
+}
+
+.service-number {
+  margin-bottom: 45px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--burgundy);
+}
+
+.service-card p {
+  max-width: 280px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--warm-gray);
+}
+
+.service-line {
+  position: absolute;
+  left: 30px;
+  bottom: 28px;
+  width: 45px;
+  height: 1px;
+  background-color: var(--gold);
+}
+
+.services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 55px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(77, 74, 74, 0.15);
+}
+
+.services-cta p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--warm-gray);
+}
+
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
@@ -290,6 +388,10 @@ a {
   .hero-image {
     min-height: 480px;
   }
+
+   .services-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
 }
 
 @media (max-width: 700px) {
@@ -358,6 +460,29 @@ a {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+   .services {
+     padding: 80px 0;
+   }
+   
+   .services-heading {
+     margin-bottom: 45px;
+   }
+   
+   .services-grid {
+     grid-template-columns: 1fr;
+     gap: 20px;
+   }
+   
+   .service-card {
+     min-height: 250px;
+   }
+   
+   .services-cta {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 20px;
+   }
 }
 
 @media (max-width: 480px) {
