@@ -456,6 +456,110 @@ a {
   object-fit: cover;
   object-position: center;
 }
+
+/* ---------- LOCALIZAÇÃO ---------- */
+
+.location {
+  padding: 110px 0;
+  background-color: var(--white);
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.location-text {
+  max-width: 520px;
+}
+
+.location-text h2 {
+  margin-bottom: 28px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--burgundy);
+}
+
+.location-description {
+  margin-bottom: 40px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--warm-gray);
+}
+
+.location-info {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.location-icon {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  color: var(--gold);
+}
+
+.location-item h3 {
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--burgundy);
+}
+
+.location-item p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--warm-gray);
+}
+
+.location-map {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  background-color: var(--rose-blush);
+  border-radius: 20px 180px 20px 20px;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--rose-blush);
+}
+
+.map-icon {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  color: var(--burgundy);
+}
+
+.map-placeholder p {
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  color: var(--burgundy);
+}
+
+.map-placeholder small {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: var(--warm-gray);
+}
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
@@ -493,6 +597,18 @@ a {
    .experience-image {
      height: 420px;
      border-radius: 120px 20px 20px 20px;
+   }
+
+   .location-content {
+     gap: 50px;
+   }
+   
+   .location-info {
+     gap: 30px;
+   }
+   
+   .location-map {
+     height: 450px;
    }
 }
 
@@ -610,6 +726,33 @@ a {
    .experience-image {
      height: 420px;
      border-radius: 120px 20px 20px 20px;
+   }
+
+   .location {
+     padding: 80px 0;
+   }
+   
+   .location-content {
+     grid-template-columns: 1fr;
+     gap: 50px;
+   }
+   
+   .location-text {
+     max-width: none;
+   }
+   
+   .location-text h2 {
+     font-size: clamp(2.5rem, 10vw, 3.5rem);
+   }
+   
+   .location-info {
+     flex-direction: column;
+     gap: 25px;
+   }
+   
+   .location-map {
+     height: 420px;
+     border-radius: 20px 120px 20px 20px;
    }
 }
 
