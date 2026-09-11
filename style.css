@@ -809,6 +809,70 @@ a {
   border: none;
   cursor: pointer;
 }
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  background-color: var(--burgundy);
+  color: var(--white);
+  padding: 70px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding-bottom: 55px;
+}
+
+.footer-brand h3 {
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.footer-brand p {
+  max-width: 320px;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social p {
+  margin-bottom: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.footer-social a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom p {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.55);
+}
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
