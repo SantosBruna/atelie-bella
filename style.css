@@ -928,6 +928,14 @@ a {
     gap: 45px;
   }
 
+   .about-text {
+     order: 1;
+   }
+   
+   .about-image {
+     order: 2;
+   }
+
    .about-image {
      height: 420px;
      border-radius: 20px 120px 20px 20px;
