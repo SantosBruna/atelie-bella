@@ -1153,6 +1153,24 @@ a {
    .experience-highlight h3 {
      font-size: 1.15rem;
    }
+
+     .footer {
+    padding-top: 55px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 40px;
+  }
+
+  .footer-social {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
