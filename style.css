@@ -1059,6 +1059,20 @@ a {
      grid-row: auto;
      height: 300px;
    }
+
+   .experience-highlights {
+     gap: 25px;
+     margin-top: 35px;
+   }
+   
+   .experience-highlight {
+     grid-template-columns: 35px 1fr;
+     gap: 15px;
+   }
+   
+   .experience-highlight h3 {
+     font-size: 1.15rem;
+   }
 }
 
 @media (max-width: 480px) {
