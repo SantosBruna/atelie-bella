@@ -460,7 +460,7 @@ a {
   object-position: center;
 }
 
-/* Destaques da experiência */
+/* ---------- DESTAQUES DA EXPERIÊNCIA ---------- */
 
 .experience-highlights {
   display: flex;
@@ -475,7 +475,7 @@ a {
   gap: 20px;
   align-items: start;
   padding-bottom: 25px;
-  border-bottom: 1px solid rgba(77, 74, 74, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .experience-highlight:last-child {
@@ -496,14 +496,22 @@ a {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--burgundy);
+  color: var(--white);
 }
 
 .experience-highlight p {
   max-width: 430px;
   font-size: 0.86rem;
   line-height: 1.7;
-  color: var(--warm-gray);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.experience-intro {
+  max-width: 520px;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 /* ---------- Galeria - Nosso espaço ---------- */
