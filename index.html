@@ -490,6 +490,38 @@
           </div>
         </section>
 
+        <!-- DEPOIMENTOS / PROVA SOCIAL -->
+        <section id="depoimentos" class="testimonials">
+          <div class="container">
+            <div class="testimonials-heading">
+              <p class="eyebrow">EXPERIÊNCIA DE QUEM CONFIA</p>
+              <h2>O que dizem nossas clientes</h2>
+              <p class="rating-badge">★ 4.9 no Google Avaliações</p>
+            </div>
+        
+            <div class="testimonials-grid">
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Ambiente super acolhedor e atendimento impecável! Fiz mechas e hidratação e saí renovada. O café com biscoitinhos é um charme à parte."</p>
+                <span class="client-name">— Mariana Silva</span>
+              </article>
+        
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Melhor experiência de salão em Niterói. Pontualidade rara e profissionais muito atenciosas que respeitam a saúde do fio."</p>
+                <span class="client-name">— Camila Duarte</span>
+              </article>
+        
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Faço unhas e sobrancelhas toda semana. A energia do espaço é incrível, parece um spa no meio da correria do dia a dia."</p>
+                <span class="client-name">— Beatriz Ramos</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+
         <!-- CONTATO -->
         <section id="contato" class="contact">
           <div class="container contact-content">
@@ -579,42 +611,58 @@
         
           </div>
         </section>
-            <!-- WHATSAPP FLUTUANTE -->
-    <a
-      href="#"
-      class="whatsapp-float"
-      aria-label="Falar pelo WhatsApp"
-    >
-      <span>WhatsApp</span>
-    </a>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer-content">
-    
-        <div class="footer-brand">
-          <h3>Ateliê Bella</h3>
-          <p>
-            Beleza, cuidado e um momento só seu.
-          </p>
-        </div>
-    
-        <div class="footer-social">
-          <p>Siga o Ateliê Bella</p>
-          <a href="#" aria-label="Instagram do Ateliê Bella">
-            Instagram
-          </a>
-        </div>
-    
-      </div>
-    
-      <div class="footer-bottom">
-        <div class="container">
-          <p>© 2026 Ateliê Bella. Todos os direitos reservados.</p>
-        </div>
-      </div>
-    </footer>
+        <!-- WHATSAPP FLUTUANTE -->
+        <a
+          href="https://wa.me/5521999998888?text=Olá!%20Gostaria%20de%20agendar%20um%20horário"
+          class="whatsapp-float btn-whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar pelo WhatsApp"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.67-1.39 1.28-1.92 1.36-.5.08-1.14.12-3.69-.93-2.18-.89-3.58-3.13-3.69-3.28-.11-.15-.88-1.17-.88-2.23s.55-1.58.75-1.8c.2-.22.44-.27.59-.27.15 0 .3 0 .43.01.14.01.32-.05.5.39.18.44.62 1.51.68 1.62.06.11.09.24.02.39-.07.15-.11.24-.22.37-.11.13-.24.28-.34.38-.11.11-.23.23-.1.45.13.22.58.96 1.25 1.56.86.77 1.58 1.01 1.8 1.12.22.11.35.09.48-.06.13-.15.56-.65.71-.87.15-.22.3-.18.5-.11.2.07 1.27.6 1.49.71.22.11.37.17.42.27.06.1.06.6-.18 1.27z"/>
+          </svg>
+          <span>Agendar no WhatsApp</span>
+        </a>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container footer-content">
+        
+            <div class="footer-brand">
+              <h3>Ateliê Bella</h3>
+              <p>
+                Beleza, cuidado e um momento só seu.
+              </p>
+            </div>
+        
+            <div class="footer-social">
+              <p>Siga o Ateliê Bella</p>
+              <a href="#" aria-label="Instagram do Ateliê Bella">
+                Instagram
+              </a>
+            </div>
+        
+          </div>
+        
+          <div class="footer-bottom">
+            <div class="container">
+              <p>© 2026 Ateliê Bella. Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </footer>
 
     </main>
+    document.querySelector(".contact-form")?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nome = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const mensagem = document.getElementById("message").value;
+    
+      const texto = `Olá! Meu nome é *${nome}* (${email}).\n\nMensagem: ${mensagem}`;
+      const fone = "5521999998888"; // Número do salão
+      window.open(`https://wa.me/${fone}?text=${encodeURI(texto)}`, "_blank");
+    });
 
 </body>
 
