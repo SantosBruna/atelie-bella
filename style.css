@@ -6,10 +6,10 @@
 /* ---------- Variáveis ---------- */
 
 :root {
-  --off-white: #FAF7F5;
-  --rose-blush: #E8C7CC;
-  --burgundy: #6D0B0B;
-  --warm-gray: #4D4A4A;
+  --off-white: #FAF7F5;  /* Fundo principal */
+  --rose-blush: #E8C7CC;  /* Cor secundária suave */
+  --burgundy: #6D0B0B; /* Cor de destaque principal (botões, títulos) */
+  --warm-gray: #4D4A4A; /* Cor do texto */
   --gold: #C9A66B;
   --deep-rose: #A85C68;
   --white: #FFFFFF;
