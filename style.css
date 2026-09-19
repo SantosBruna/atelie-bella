@@ -859,6 +859,32 @@ a {
   transition: border-color 0.3s ease;
 }
 
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-option input {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.checkbox-option span {
+    font-size: 0.88rem;
+    color: var(--burgundy);
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
