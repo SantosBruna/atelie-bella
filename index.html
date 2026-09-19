@@ -497,14 +497,7 @@
                 const message = document.getElementById('message').value;
                 const phone = '5521984380101'; // Número do WhatsApp (DDI + DDD + Telefone)
 
-                let text = `Olá, Ateliê Bella! Meu nome é *${name}*.
-`;
-                text += `Gostaria de agendar: *${service}*.
-`;
-                if (message.trim()) {
-                    text += `Observação: ${message.trim()}
-`;
-                }
+               let text = `Olá! Vi o projeto Ateliê Bella e gostaria de fazer um orçamento para criar um site como este.`;
 
                 window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
             });
