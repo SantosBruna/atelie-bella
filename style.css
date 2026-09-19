@@ -497,6 +497,7 @@ a {
 .testimonials {
   padding: 100px 0;
   background-color: var(--burgundy);
+  color: var(--white);
 }
 
 .testimonials-heading {
