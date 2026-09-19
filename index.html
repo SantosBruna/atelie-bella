@@ -569,16 +569,42 @@
         // Envio do formulário direto para o WhatsApp do salão
         const contactForm = document.getElementById('contactForm');
         if (contactForm) {
-            contactForm.addEventListener('submit', (e) => {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                const name = document.getElementById('name').value;
-                const service = document.getElementById('service').value;
-                const message = document.getElementById('message').value;
-                const phone = '5521984380101'; // Número do WhatsApp (DDI + DDD + Telefone)
-
-               let text = `Olá! Vi o projeto Ateliê Bella e gostaria de fazer um orçamento para criar um site como este.`;
-
-                window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
+            
+                const name = document.getElementById('name').value.trim();
+                const siteType = document.getElementById('site-type').value;
+                const projectDescription = document.getElementById('project-description').value.trim();
+            
+                const features = Array.from(
+                    document.querySelectorAll('input[name="features"]:checked')
+                ).map(input => input.value);
+            
+                const materials = Array.from(
+                    document.querySelectorAll('input[name="materials"]:checked')
+                ).map(input => input.value);
+            
+                const featuresText = features.length
+                    ? features.join(', ')
+                    : 'Ainda não definido';
+            
+                const materialsText = materials.length
+                    ? materials.join(', ')
+                    : 'Ainda não definido';
+            
+                const text =
+                    `Olá, Bruna! Vi o projeto Ateliê Bella no seu portfólio e gostaria de fazer um orçamento para criar um site como este.%0A%0A` +
+                    `*Nome:* ${name}%0A` +
+                    `*Tipo de site:* ${siteType}%0A` +
+                    `*Funcionalidades desejadas:* ${featuresText}%0A` +
+                    `*Materiais que já possuo:* ${materialsText}%0A%0A` +
+                    `*Sobre o projeto:*%0A${projectDescription}`;
+            
+                const phone = '5521984380101';
+            
+                const whatsappUrl = `https://wa.me/${phone}?text=${text}`;
+            
+                window.open(whatsappUrl, '_blank');
             });
         }
     </script>
