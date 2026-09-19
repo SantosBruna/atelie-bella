@@ -548,7 +548,7 @@ a {
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.65;
-  color: var(--white);
+  color: var(--muted-gray);
   margin: 16px 0 24px;
   flex-grow: 1;
 }
