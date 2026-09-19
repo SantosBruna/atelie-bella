@@ -502,6 +502,7 @@ a {
 .testimonials-heading {
   text-align: center;
   margin-bottom: 50px;
+  color: var(--white);
 }
 
 .testimonials-heading h2 {
@@ -548,7 +549,7 @@ a {
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.65;
-  color: var(--warm-gray);
+  color: var(--white);
   margin: 16px 0 24px;
   flex-grow: 1;
 }
