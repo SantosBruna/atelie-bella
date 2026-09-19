@@ -350,7 +350,7 @@ a {
 
 .service-list li {
   font-size: 0.85rem;
-  color: var(--warm-gray);
+  color: var(--white);
   margin-bottom: 8px;
   position: relative;
   padding-left: 14px;
